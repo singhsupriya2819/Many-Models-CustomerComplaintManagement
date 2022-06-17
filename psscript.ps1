@@ -91,8 +91,8 @@ $WebClient.DownloadFile("https://github.com/microsoft/Azure-Solution-Accelerator
 Expand-Archive -LiteralPath 'C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main.zip' -DestinationPath 'C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main' -Force
 
 $WebClient = New-Object System.Net.WebClient
-$WebClient.DownloadFile("https://files.consumerfinance.gov/ccdb/complaints.csv.zip","C:\LabFiles\https://files.consumerfinance.gov/ccdb/complaints.csv.zip")
-Expand-Archive -LiteralPath 'C:\LabFiles\complaints.zip' -DestinationPath 'C:\LabFiles\complaints' -Force
+$WebClient.DownloadFile("https://files.consumerfinance.gov/ccdb/complaints.csv.zip","C:\LabFiles\complaints.csv.zip")
+Expand-Archive -LiteralPath 'C:\LabFiles\complaints.csv.zip' -DestinationPath 'C:\LabFiles\complaints.csv' -Force
 
 Stop-Transcript
 Restart-Computer -Force 
