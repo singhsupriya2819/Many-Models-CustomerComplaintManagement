@@ -87,7 +87,7 @@ Enable-CloudLabsEmbeddedShadow $vmAdminUsername $trainerUserName $trainerUserPas
 
 New-Item -ItemType directory -Path C:\LabFiles
 $WebClient = New-Object System.Net.WebClient
-$WebClient.DownloadFile("https://github.com/microsoft/Azure-Solution-Accelerator-Customer-Complaint-Management.git","C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main.zip")
+$WebClient.DownloadFile("https://codeload.github.com/microsoft/Azure-Solution-Accelerator-Customer-Complaint-Management/zip/refs/heads/main","C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main.zip")
 Expand-Archive -LiteralPath 'C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main.zip' -DestinationPath 'C:\LabFiles\Azure-Solution-Accelerator-Customer-Complaint-Management-main' -Force
 
 $WebClient = New-Object System.Net.WebClient
