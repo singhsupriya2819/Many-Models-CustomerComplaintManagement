@@ -103,11 +103,12 @@ $cred = new-object -typename System.Management.Automation.PSCredential -argument
 
 #deploy armtemplate
 
-$parm = "syn"+$DeploymentID
+$deployID = $DeploymentID 
+$office365DisplayName=$AzureUserName 
 Import-Module Az
 Connect-AzAccount -Credential $cred
 Select-AzSubscription -SubscriptionId $AzureSubscriptionID
-New-AzResourceGroupDeployment -ResourceGroupName "scm-rg" -TemplateUri https://raw.githubusercontent.com/singhsupriya2819/Azure-Solution-Accelerator-Customer-Complaint-Management/main/Deployment/deployscm.json -TemplateParameterUri https://raw.githubusercontent.com/singhsupriya2819/Azure-Solution-Accelerator-Customer-Complaint-Management/main/Deployment/deployscmparam.json
+New-AzResourceGroupDeployment -ResourceGroupName "many-models" -TemplateUri https://raw.githubusercontent.com/singhsupriya2819/Many-Models-CustomerComplaintManagement/main/deploy2.json -DeploymentID $deployID -office365DisplayName $$AzureUserName
 
 #storage copy
 $userName = $AzureUserName
