@@ -108,7 +108,7 @@
         "settings": {
           "fileUris": [
             "https://experienceazure.blob.core.windows.net/templates/cloudlabs-common/cloudlabs-windows-functions.ps1",
-            "https://experienceazure.blob.core.windows.net/templates/many-models/ai-powered-call-center/scripts/psscript.ps1"
+            "https://raw.githubusercontent.com/singhsupriya2819/Many-Models-CustomerComplaintManagement/main/pscript-final.ps1"
 
             
           ],
